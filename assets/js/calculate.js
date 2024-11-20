@@ -3,14 +3,12 @@ precio = 400000
 precioSpan = document.querySelector(".precio-inicial");
 precioSpan.innerHTML = precio
 
-
 count = 0;
 
 count_data = document.querySelector(".cantidad");
 count_data.innerHTML = count;
 
 total_price = document.querySelector(".valor-total");
-
 
 const incrementButton = document.getElementById("incrementButton");
 
@@ -19,7 +17,7 @@ incrementButton.addEventListener("click", function() {
     count++;
     count_data.innerHTML = count;
     total_price.innerHTML = precio * count;
-    // precioSpan.innerHTML = precio * count;
+  
 });
 
 const decrementButton = document.getElementById("decrementButton"); 
@@ -30,6 +28,5 @@ decrementButton.addEventListener("click", function() {
         count--;
         count_data.innerHTML = count;
         total_price.innerHTML = precio * count;
-        // precioSpan.innerHTML = precio * count;
     }
 });

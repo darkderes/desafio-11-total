@@ -29,4 +29,7 @@ decrementButton.addEventListener("click", function() {
         count_data.innerHTML = count;
         total_price.innerHTML = precio * count;
     }
+    else {
+        alert("La cantidad no puede ser menor a 0")
+    }
 });
